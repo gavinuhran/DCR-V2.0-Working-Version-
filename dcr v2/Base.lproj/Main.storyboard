@@ -1,14 +1,24 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0kR-46-OWS">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="deathrattlebb_reg.ttf">
+            <string>DeathRattleBB</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="dcr_v2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +26,229 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Crucible Ranking Grandient" translatesAutoresizingMaskIntoConstraints="NO" id="473-wE-8Zy">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="667" id="8pY-2L-H2O"/>
+                                    <constraint firstAttribute="width" constant="375" id="tYE-hM-5xm"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q7x-az-epy">
+                                <rect key="frame" x="0.0" y="20" width="125" height="70"/>
+                                <color key="backgroundColor" red="0.36388275027275085" green="0.43737250566482544" blue="0.93410629034042358" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="KgF-JM-Wcj"/>
+                                    <constraint firstAttribute="width" constant="125" id="f4v-Mj-Bzh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DeathRattleBB" family="DeathRattle BB" pointSize="40"/>
+                                <state key="normal" title="hunter">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="hunterButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oGv-Lp-Dgj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n04-sh-SBe">
+                                <rect key="frame" x="250" y="20" width="125" height="70"/>
+                                <color key="backgroundColor" red="0.36388275027275085" green="0.43737250566482544" blue="0.93410629034042358" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="9sf-gN-LoP"/>
+                                    <constraint firstAttribute="width" constant="125" id="q3V-Eh-onJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DeathRattleBB" family="DeathRattle BB" pointSize="40"/>
+                                <state key="normal" title="warlock">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="warlockButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RDm-9y-B7n"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SVQ-DY-i5t">
+                                <rect key="frame" x="125" y="20" width="125" height="70"/>
+                                <color key="backgroundColor" red="0.36388275027275085" green="0.43737250566482544" blue="0.93410629034042358" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="Q4c-JV-M9W"/>
+                                    <constraint firstAttribute="height" constant="70" id="uLr-yM-voT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DeathRattleBB" family="DeathRattle BB" pointSize="40"/>
+                                <state key="normal" title="titan">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="titanButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9eN-hu-Ax1"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cC8-NB-gPd">
+                                <rect key="frame" x="0.0" y="372" width="375" height="295"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="3Bk-3T-bvi"/>
+                                    <constraint firstAttribute="height" constant="295" id="q72-d0-ezF"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l1p-h5-itr">
+                                <rect key="frame" x="-0.5" y="160" width="375" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="9UZ-28-pEa"/>
+                                    <constraint firstAttribute="width" constant="375" id="H0C-kJ-iap"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DeathRattleBB" family="DeathRattle BB" pointSize="100"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="n04-sh-SBe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="2we-uL-Quv"/>
+                            <constraint firstItem="473-wE-8Zy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5Sb-mo-jY6"/>
+                            <constraint firstItem="Q7x-az-epy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Dak-Ii-MPz"/>
+                            <constraint firstItem="SVQ-DY-i5t" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Evu-5B-hgT"/>
+                            <constraint firstItem="Q7x-az-epy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="GOZ-Y9-rXu"/>
+                            <constraint firstItem="473-wE-8Zy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Glb-Il-VXM"/>
+                            <constraint firstItem="l1p-h5-itr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HYL-Va-gUQ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="473-wE-8Zy" secondAttribute="bottom" id="NRM-oU-LND"/>
+                            <constraint firstItem="n04-sh-SBe" firstAttribute="leading" secondItem="SVQ-DY-i5t" secondAttribute="trailing" id="QqY-04-vcw"/>
+                            <constraint firstItem="cC8-NB-gPd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="S1q-qW-eSQ"/>
+                            <constraint firstItem="473-wE-8Zy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="TPi-dM-iXj"/>
+                            <constraint firstAttribute="trailing" secondItem="n04-sh-SBe" secondAttribute="trailing" id="aE9-XW-w8S"/>
+                            <constraint firstItem="473-wE-8Zy" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ctR-FK-gTg"/>
+                            <constraint firstAttribute="trailing" secondItem="cC8-NB-gPd" secondAttribute="trailing" id="gzP-Ch-lsw"/>
+                            <constraint firstItem="cC8-NB-gPd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="je9-Qc-pCe"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cC8-NB-gPd" secondAttribute="bottom" id="l7n-f4-321"/>
+                            <constraint firstAttribute="trailing" secondItem="473-wE-8Zy" secondAttribute="trailing" id="maC-E2-dke"/>
+                            <constraint firstItem="SVQ-DY-i5t" firstAttribute="leading" secondItem="Q7x-az-epy" secondAttribute="trailing" id="mdx-TF-HFu"/>
+                            <constraint firstItem="l1p-h5-itr" firstAttribute="top" secondItem="SVQ-DY-i5t" secondAttribute="bottom" constant="70" id="vMg-pZ-nqv"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="f1U-tT-ecf"/>
+                    <connections>
+                        <outlet property="amountLabel" destination="l1p-h5-itr" id="rLt-nv-BcM"/>
+                        <outlet property="hunterButtonProperties" destination="Q7x-az-epy" id="41A-zO-anl"/>
+                        <outlet property="image" destination="cC8-NB-gPd" id="peE-wc-U7O"/>
+                        <outlet property="titanButtonProperties" destination="SVQ-DY-i5t" id="J3m-BZ-ehS"/>
+                        <outlet property="warlockButtonProperties" destination="n04-sh-SBe" id="BXp-3Q-mdb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1592.8" y="129.98500749625188"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GrT-bX-4P0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WZg-dZ-TQG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="20u-2R-9TK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="1Ec-tl-3sg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ja5-sY-8Xh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="129.98500749625188"/>
+        </scene>
+        <!--StartScreen-->
+        <scene sceneID="3Sn-Be-Fdy">
+            <objects>
+                <viewController title="StartScreen" id="0kR-46-OWS" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oFm-kn-2Aj"/>
+                        <viewControllerLayoutGuide type="bottom" id="56v-3C-ykB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="REK-bO-1J4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Crucible Ranking Grandient" translatesAutoresizingMaskIntoConstraints="NO" id="QW5-bj-zD6">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="SEG-4i-zC2"/>
+                                    <constraint firstAttribute="height" constant="667" id="UrU-vg-r5P"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Crucible Logo" translatesAutoresizingMaskIntoConstraints="NO" id="1QI-BI-fAa">
+                                <rect key="frame" x="87" y="165" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="HAG-St-KoB"/>
+                                    <constraint firstAttribute="height" constant="200" id="XmL-5A-ctA"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Crucible" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KP9-vb-gUj">
+                                <rect key="frame" x="0.0" y="102" width="375" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="GD4-Vl-bcP"/>
+                                    <constraint firstAttribute="width" constant="375" id="VQp-Z7-Nw4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DeathRattleBB" family="DeathRattle BB" pointSize="70"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="kd Tracker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37c-1Q-L4j">
+                                <rect key="frame" x="0.0" y="373" width="375" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="EaS-vP-mmv"/>
+                                    <constraint firstAttribute="height" constant="55" id="g05-NU-6m7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DeathRattleBB" family="DeathRattle BB" pointSize="70"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MPO-Mq-bxQ">
+                                <rect key="frame" x="126" y="492" width="123" height="53"/>
+                                <color key="backgroundColor" red="0.73434007167816162" green="0.72239094972610474" blue="0.72207719087600708" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="123" id="8Sl-5x-Fc9"/>
+                                    <constraint firstAttribute="height" constant="53" id="Vv7-Vc-wS9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DeathRattleBB" family="DeathRattle BB" pointSize="40"/>
+                                <state key="normal" title="Begin">
+                                    <color key="titleColor" red="0.91565269231796265" green="0.27823355793952942" blue="0.25292372703552246" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="yzr-Au-0zo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="37c-1Q-L4j" firstAttribute="centerX" secondItem="REK-bO-1J4" secondAttribute="centerX" id="741-dS-GqD"/>
+                            <constraint firstItem="QW5-bj-zD6" firstAttribute="leading" secondItem="REK-bO-1J4" secondAttribute="leading" id="7Vl-N8-To4"/>
+                            <constraint firstItem="MPO-Mq-bxQ" firstAttribute="leading" secondItem="REK-bO-1J4" secondAttribute="leadingMargin" constant="110" id="7aq-Jy-2lx"/>
+                            <constraint firstItem="1QI-BI-fAa" firstAttribute="top" secondItem="KP9-vb-gUj" secondAttribute="bottom" constant="8" id="AUz-lr-1jG"/>
+                            <constraint firstItem="MPO-Mq-bxQ" firstAttribute="top" secondItem="37c-1Q-L4j" secondAttribute="bottom" constant="64" id="H2E-ux-zLT"/>
+                            <constraint firstItem="1QI-BI-fAa" firstAttribute="centerX" secondItem="REK-bO-1J4" secondAttribute="centerX" id="NVT-OX-SE0"/>
+                            <constraint firstItem="MPO-Mq-bxQ" firstAttribute="centerX" secondItem="REK-bO-1J4" secondAttribute="centerX" id="PCv-hJ-AQI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MPO-Mq-bxQ" secondAttribute="trailing" constant="110" id="Tf6-Dh-Kbq"/>
+                            <constraint firstItem="QW5-bj-zD6" firstAttribute="centerX" secondItem="REK-bO-1J4" secondAttribute="centerX" id="UtO-Yc-zCw"/>
+                            <constraint firstItem="KP9-vb-gUj" firstAttribute="centerX" secondItem="REK-bO-1J4" secondAttribute="centerX" id="Wmu-gs-scV"/>
+                            <constraint firstItem="1QI-BI-fAa" firstAttribute="top" secondItem="KP9-vb-gUj" secondAttribute="bottom" constant="8" id="Xfq-om-DRq"/>
+                            <constraint firstAttribute="trailing" secondItem="QW5-bj-zD6" secondAttribute="trailing" id="YGV-zm-zlP"/>
+                            <constraint firstItem="56v-3C-ykB" firstAttribute="top" secondItem="QW5-bj-zD6" secondAttribute="bottom" id="b0w-7H-VFH"/>
+                            <constraint firstItem="37c-1Q-L4j" firstAttribute="centerX" secondItem="REK-bO-1J4" secondAttribute="centerX" id="ec1-go-84U"/>
+                            <constraint firstItem="QW5-bj-zD6" firstAttribute="centerY" secondItem="REK-bO-1J4" secondAttribute="centerY" id="hOc-DB-OKY"/>
+                            <constraint firstItem="37c-1Q-L4j" firstAttribute="top" secondItem="1QI-BI-fAa" secondAttribute="bottom" constant="8" id="sBI-ga-3W5"/>
+                            <constraint firstItem="KP9-vb-gUj" firstAttribute="centerX" secondItem="REK-bO-1J4" secondAttribute="centerX" id="sdr-ss-E1O"/>
+                            <constraint firstItem="56v-3C-ykB" firstAttribute="top" secondItem="MPO-Mq-bxQ" secondAttribute="bottom" constant="122" id="up6-5w-cuj"/>
+                            <constraint firstItem="QW5-bj-zD6" firstAttribute="top" secondItem="REK-bO-1J4" secondAttribute="top" id="vaT-b1-bzJ"/>
+                            <constraint firstItem="KP9-vb-gUj" firstAttribute="top" secondItem="oFm-kn-2Aj" secondAttribute="bottom" constant="82" id="vyn-ax-qtQ"/>
+                            <constraint firstItem="37c-1Q-L4j" firstAttribute="top" secondItem="1QI-BI-fAa" secondAttribute="bottom" constant="8" id="w6X-vk-6Vy"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Ij-pD-8ds" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="864.79999999999995" y="129.98500749625188"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Crucible Logo" width="350" height="350"/>
+        <image name="Crucible Ranking Grandient" width="3750" height="6670"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="yzr-Au-0zo"/>
+    </inferredMetricsTieBreakers>
 </document>
